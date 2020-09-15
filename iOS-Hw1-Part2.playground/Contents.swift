@@ -16,7 +16,14 @@ import UIKit
  1.5) استعمل if statement , اذا كانت المصفوفة تحتوي على بيتزا قم بطباعه "yumm Pizza🍕😋"
 
 */
-
+var FavoriteFoodArray = ["Burger","Steaks","Frise","Eegs"]
+FavoriteFoodArray.append("Pizza")
+print(FavoriteFoodArray[0])
+for food in FavoriteFoodArray  {
+    if food == "Pizza" {
+        print("yumm Pizza")
+    }
+}
 
 
 
@@ -38,7 +45,12 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
  ملاحظة: معادله الرقم الزوجي number % 2 == 0
 
 */
-
+var evennumbers: [Int] = []
+for evennumber in numbers {
+    if evennumber % 2 == 0 {
+        evennumbers.append(evennumber)
+    }
+}
 //: # 3️⃣  السؤال الثالث
 /*:
 ##
@@ -56,4 +68,14 @@ var numbers = [1,2,3,4,5,6,7,8,9,10]
 
  
  */
-   
+for mathSchedule in 1...5 {
+    for mathSchedule2 in 1...10{
+        print("\(mathSchedule)*\(mathSchedule2) = \(mathSchedule*mathSchedule2)")
+    }
+}
+
+// bounus
+let squer = "*********************"
+for squers in 1...7 {
+    print(squer)
+}
